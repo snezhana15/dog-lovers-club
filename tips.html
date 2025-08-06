@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Lovers Club - Dog Tips</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🐾 Dog Lovers Club</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="tips.html">Dog Tips</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Helpful Dog Tips 🐕</h2>
+    <ul>
+      <li>Provide plenty of fresh water daily.</li>
+      <li>Walk your dog at least twice a day.</li>
+      <li>Feed them healthy, balanced food.</li>
+      <li>Take your dog for regular vet checkups.</li>
+      <li>Give them toys to keep their minds active.</li>
+      <li>Give them love and keep them safe.</li>
+    </ul>
+
+    <section>
+      <h3>Watch: First-Time Dog Owners’ Guide</h3>
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/3KQs4AYJjBs"
+        title="First-Time Dog Owners Guide"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <section style="margin-top: 20px;">
+      <h3>Get a Random Tip</h3>
+      <button onclick="showRandomTip()">Click Me!</button>
+      <p id="randomTip" style="margin-top: 10px; font-style: italic;"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Snezhana Ismailaj</p>
+  </footer>
+
+  <script>
+    function showRandomTip() {
+      const tips = [
+        "Train your dog with positive reinforcement.",
+        "Keep your dog’s nails trimmed.",
+        "Never leave your dog in a hot car.",
+        "Brush your dog’s coat regularly.",
+        "Give your dog a comfy place to sleep."
+      ];
+      const randomIndex = Math.floor(Math.random() * tips.length);
+      document.getElementById("randomTip").textContent = tips[randomIndex];
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dog Lovers Club - Join Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🐾 Dog Lovers Club</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="tips.html">Dog Tips</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Become a Member!</h2>
+    <p>Fill out the form below to join our Dog Lovers Club. We'll contact you with upcoming events and updates!</p>
+
+    <form id="joinForm" onsubmit="return validateForm()">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="dogname">Dog's Name:</label>
+      <input type="text" id="dogname" name="dogname" required />
+
+      <label for="breed">Dog's Breed:</label>
+      <input type="text" id="breed" name="breed" required />
+
+      <label for="message">Tell us why you love dogs:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <input type="submit" value="Join Now!" />
+      <input type="reset" value="Clear Form" />
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Snezhana Ismailaj</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
